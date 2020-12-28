@@ -36,3 +36,15 @@ puts fizz_buzz(4)
 puts fizz_buzz(5)
 puts fizz_buzz(6)
 puts fizz_buzz(15)
+
+def greeting(country)
+    country or return "countryを入力してください"
+    if country == "japan"
+        "こんにちは"
+    else
+        "hello"
+    end
+end
+
+puts greeting(nil)
+puts greeting("japan")
